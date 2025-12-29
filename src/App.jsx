@@ -46,6 +46,9 @@ export default function App() {
           </span>
         </label>
       </div>
+      <div style={{ marginBottom: 10 }}>
+  <strong>Total items: {filteredImages.length}</strong>
+</div>
 
       <div className={view}>
         {filteredImages.map((img) => (
