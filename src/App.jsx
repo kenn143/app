@@ -23,9 +23,8 @@ export default function App() {
 
   return (
     <div style={{ padding: 20, maxWidth: 900, margin: "auto" }}>
-      <h2>Public Image Search</h2>
+      {/* <h2>Public Image Search</h2> */}
 
-      {/* Search */}
       <input
         type="text"
         placeholder="Search by filename..."
@@ -34,7 +33,6 @@ export default function App() {
         style={{ padding: 8, width: "100%", marginBottom: 15 }}
       />
 
-      {/* Toggle */}
       <div style={{ marginBottom: 20 }}>
         <label className="toggle">
           <input
@@ -49,7 +47,6 @@ export default function App() {
         </label>
       </div>
 
-      {/* Images */}
       <div className={view}>
         {filteredImages.map((img) => (
           <div
@@ -63,7 +60,6 @@ export default function App() {
         ))}
       </div>
 
-      {/* Modal */}
       {selectedImage && (
         <div className="modal" onClick={() => setSelectedImage(null)}>
           <div
