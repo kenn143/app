@@ -75,7 +75,7 @@ export default function App() {
           >
             <button className="close">✕</button>
             <img src={selectedImage.src} alt={selectedImage.name} />
-            <h3>{selectedImage.name}</h3>
+            {/* <h3>{selectedImage.name}</h3> */}
           </div>
         </div>
       )}
