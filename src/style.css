@@ -232,8 +232,11 @@ body {
     max-width: none;
     border-radius: 0;
     padding: 0;
-    background: transparent;   /* IMPORTANT */
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black; 
+    position: relative;
   }
 
   .modal-content img {
@@ -249,8 +252,17 @@ body {
     font-size: 26px;
     color: white;
     z-index: 10;
+    background: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
   }
 }
+
 
 @media screen and (min-width: 769px) {
   /* List view cards should have the same width as grid items */

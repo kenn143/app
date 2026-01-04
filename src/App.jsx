@@ -73,7 +73,7 @@ export default function App() {
             className="modal-content"
             onClick={(e) => e.stopPropagation()}
           >
-           {/* <button className="close" onClick={() => setSelectedImage(null)}>✕</button> */}
+           <button className="close" onClick={() => setSelectedImage(null)}>✕</button>
             <img src={selectedImage.src} alt={selectedImage.name} />
             {/* <h3>{selectedImage.name}</h3> */}
           </div>
