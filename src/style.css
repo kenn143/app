@@ -53,6 +53,7 @@ body {
   flex-direction: column;
   gap: 12px;
 }
+
 @media (max-width: 768px) {
   .gallery.grid {
     grid-template-columns: repeat(2, 1fr);
@@ -248,6 +249,26 @@ body {
     font-size: 26px;
     color: white;
     z-index: 10;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* List view cards should have the same width as grid items */
+  .gallery.list .asset-card {
+    width: 260px; /* same as grid min width */
+    margin-bottom: 20px; /* spacing between list items */
+  }
+
+  .gallery.list {
+    display: flex;
+    flex-wrap: wrap; /* allow wrapping like grid */
+    gap: 20px;
+  }
+
+  .gallery.list .asset-card img {
+    height: 180px; /* same as grid */
+    width: 100%;
+    /* object-fit: cover; */
   }
 }
 
